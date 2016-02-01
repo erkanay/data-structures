@@ -1,3 +1,6 @@
 # Data Structures
 
-Some common data structures in python
+Some common data structures in Python
+
+### Hash Table
+https://en.wikipedia.org/wiki/Hash_table
