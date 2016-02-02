@@ -1,12 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-"""
-Hashmap implementation
-
-
-"""
-
 
 class HashMap(object):
     def __init__(self, n):
