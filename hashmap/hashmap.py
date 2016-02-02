@@ -50,6 +50,18 @@ class HashMap(object):
                 self.map[key_hash].pop(i)
                 return True
 
+    def swap(self, f_key, s_key):
+        f_key_hash = self._get_hash(f_key)
+        s_key_hash = self._get_hash(s_key)
+        temp = None
+        if self.map[f_key_hash] is not None:
+            if self.map[s_key_hash] is not None:
+                temp = self.map[f_key_hash]
+                self.map[f_key_hash] = self.map[s_key_hash]
+                self.map[s_key_hash] = temp
+                return True
+        return False
+
     def show(self):
         for item in self.map:
             if item is not None:
